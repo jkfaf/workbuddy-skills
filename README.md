@@ -19,7 +19,7 @@
 # 1. 克隆仓库
 cd ~/.workbuddy
 mv skills skills.bak  # 备份原有目录（如果存在）
-git clone <远程仓库地址> skills
+git clone https://github.com/jkfaf/workbuddy-skills.git skills
 
 # 2. 安装 gzh-design-skill 依赖
 cd skills/gzh-design-skill/assets/doocs-md
