@@ -1,0 +1,30 @@
+# === 依赖目录 (另一台设备重装) ===
+node_modules/
+.pnpm/
+.pnpm-store/
+
+# === Python ===
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# === 备份压缩包 ===
+*.zip
+*.tar.gz
+*.tgz
+
+# === 系统 ===
+.DS_Store
+Thumbs.db
+
+# === IDE ===
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# === 日志/临时 ===
+*.log
+*.tmp
+*.lock

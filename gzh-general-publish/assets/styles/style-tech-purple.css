@@ -1,0 +1,231 @@
+/* ============================================
+   公众号排版 CSS - 科技现代风（科技/互联网）
+   自动生成 by gen-css.py
+   字号层次：
+   - 主标题 22px / 章节标题 17px / 正文 16px
+   - 设计元素 15px / 紧缩元素 14px / 明显紧缩 13px
+   ============================================ */
+
+/* ========== 全局字体 & 段落 ========== */
+p {
+  font-family: "PingFang SC", "PingFangSC-light", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  color: rgb(62, 62, 62);
+  margin: 0 0 20px;
+  text-align: justify;
+}
+
+/* ========== h1 主标题 ========== */
+h1 {
+  font-family: "PingFang SC", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2C2C2C;
+  text-align: center;
+  margin: 0 0 28px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+/* ========== h2 章节标题 ========== */
+h2 {
+  font-family: "PingFang SC", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: #6B2C91;
+  margin: 24px 0 14px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+/* ========== 导语框 ========== */
+.lead-box {
+  background: #F5F0FA;
+  border-left: 4px solid #6B2C91;
+  border-radius: 0 6px 6px 0;
+  padding: 18px 22px;
+  margin: 20px 0 24px;
+}
+.lead-label {
+  display: inline-block;
+  background: #6B2C91;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 12px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.lead-content {
+  font-size: 15px;
+  color: #2C1A3D;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ========== 引用块 ========== */
+.quote-box {
+  background: #E8DCEF;
+  border: 1px dashed #B894C9;
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin: 20px 0;
+  position: relative;
+}
+.quote-mark {
+  font-size: 32px;
+  color: #8B6BA8;
+  font-family: Georgia, serif;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.quote-text {
+  font-size: 15px;
+  color: #2C1A3D;
+  line-height: 1.8;
+  margin: 0 0 8px;
+  font-style: italic;
+}
+.quote-sub {
+  font-size: 14px;
+  color: #4A3A5C;
+  margin: 0;
+}
+
+/* ========== 高亮框 ========== */
+.highlight-box {
+  background: #F5F0FA;
+  border: 1px dashed #6B2C91;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+.highlight-box p {
+  font-size: 15px;
+  color: #2C1A3D;
+  margin: 0;
+}
+
+/* ========== 章节序号装饰 ========== */
+.section-title {
+  margin: 28px 0 18px;
+  padding: 0;
+  border: none;
+}
+.section-num {
+  display: inline-block;
+  font-size: 28px;
+  color: #8B6BA8;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.section-text {
+  display: inline-block;
+  font-size: 17px;
+  color: #6B2C91;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+/* ========== 图片样式 ========== */
+figure {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+figure img {
+  width: 100%;
+  border-radius: 6px;
+}
+figcaption {
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* ========== 分隔线 ========== */
+hr {
+  border: none;
+  height: 1px;
+  background: #B894C9;
+  margin: 30px 0;
+}
+
+/* ========== 作者/人物卡片 ========== */
+.lawyer-card {
+  background: #F5F0FA;
+  border: 1px solid #B894C9;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 24px 0;
+}
+.lawyer-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #6B2C91;
+  box-shadow: 0 0 0 3px rgba(107,44,145, 0.3);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+.lawyer-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+.lawyer-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2C1A3D;
+  margin: 0 0 4px;
+}
+.lawyer-title {
+  font-size: 13px;
+  color: #4A3A5C;
+  margin: 0 0 6px;
+}
+.lawyer-bio {
+  font-size: 13px;
+  color: #4A3A5C;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========== 版尾卡片 ========== */
+.gzh-footer {
+  background: #2C2C2C;
+  border-radius: 8px;
+  padding: 24px 20px;
+  margin: 30px 0 0;
+  text-align: center;
+}
+.gzh-footer-name {
+  font-size: 13px;
+  color: #FFFFFF;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 0 8px;
+}
+.gzh-footer-slogan {
+  font-size: 13px;
+  color: #AAAAAA;
+  margin: 0 0 16px;
+}
+.gzh-footer-qrcode {
+  width: 120px;
+  height: 120px;
+  border-radius: 6px;
+  border: 2px solid #6B2C91;
+  margin: 0 auto 8px;
+}
+.gzh-footer-tip {
+  font-size: 13px;
+  color: #888888;
+  margin: 0;
+}

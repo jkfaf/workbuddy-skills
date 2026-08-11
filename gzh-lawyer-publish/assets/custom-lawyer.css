@@ -1,0 +1,451 @@
+/* ============================================
+   法律行业公众号排版 - 深暗金奢华风格
+   字号层次（参考优秀公众号文章设计）：
+   - 主标题 22px（最大，主标题感）
+   - 章节小标题 17px（略大于正文，bold 强调）
+   - 正文 16px（基准）
+   - 设计元素正文 15px（导语/引用/高亮）
+   - 模块卡片 14px（紧缩）
+   - 律师卡片/文末联系 13px（明显紧缩）
+   ============================================ */
+
+/* ========== 全局字体 & 段落（参照参考文章） ========== */
+p {
+  font-family: "PingFang SC", "PingFangSC-light", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  color: rgb(62, 62, 62);
+  margin: 0 0 20px;
+  text-align: justify;
+}
+
+/* ========== h1 主标题（明显大于正文） ========== */
+h1 {
+  font-family: "PingFang SC", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2C2C2C;
+  text-align: center;
+  margin: 0 0 28px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+/* ========== h2 章节标题（略大于正文，bold 强调） ========== */
+h2 {
+  font-family: "PingFang SC", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: #6B4F0E;
+  margin: 24px 0 14px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+/* ========== 导语框 ========== */
+.lead-box {
+  background: #F5EFE0;
+  border-left: 4px solid #6B4F0E;
+  border-radius: 0 6px 6px 0;
+  padding: 18px 22px;
+  margin: 20px 0 24px;
+}
+.lead-label {
+  display: inline-block;
+  background: #6B4F0E;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 12px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.lead-content {
+  font-size: 15px;
+  color: #3D2E08;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-indent: 0;
+  margin: 0;
+  text-align: justify;
+}
+
+/* ========== 编号小标题（略大于正文，bold 强调） ========== */
+.section-title {
+  display: flex;
+  align-items: center;
+  margin: 28px 0 18px;
+  padding: 0;
+}
+.section-num {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 900;
+  color: #6B4F0E;
+  line-height: 1;
+  margin-right: 14px;
+  font-family: Georgia, serif;
+  letter-spacing: -1px;
+}
+.section-text {
+  font-size: 17px;
+  font-weight: bold;
+  color: #2C2C2C;
+  border-left: 2px solid #A88840;
+  padding-left: 12px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+/* ========== 引用块（深暗金装饰） ========== */
+.quote-box {
+  background: #F5EFE0;
+  border: 1px dashed #6B4F0E;
+  border-radius: 6px;
+  padding: 22px 26px;
+  margin: 20px 0;
+  text-align: center;
+}
+.quote-mark {
+  font-size: 32px;
+  color: #A88840;
+  font-family: Georgia, serif;
+  line-height: 0.5;
+  margin-bottom: 8px;
+}
+.quote-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: #6B4F0E;
+  letter-spacing: 2px;
+  margin: 10px 0 6px;
+  line-height: 1.7;
+}
+.quote-sub {
+  font-size: 14px;
+  color: #6B5520;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* ========== 五大模块卡片网格（table 布局，见脚本生成） ========== */
+.module-grid td {
+  background: #F5EFE0;
+  border: 1px solid #C9B58A;
+  border-radius: 6px;
+  padding: 12px 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+.module-num {
+  font-size: 14px;
+  color: #6B4F0E;
+  font-weight: bold;
+  margin-right: 8px;
+  font-family: Georgia, serif;
+  letter-spacing: 1px;
+}
+.module-name {
+  font-size: 14px;
+  color: #3D2E08;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ========== 重点高亮框 ========== */
+.highlight-box {
+  background: #F5EFE0;
+  border: 1px dashed #6B4F0E;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 16px 0 20px;
+  font-size: 15px;
+  color: #3D2E08;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-indent: 0;
+  text-align: justify;
+}
+.highlight-box strong {
+  color: #6B4F0E;
+}
+
+/* ========== 律师卡片（明显紧缩，13px） ========== */
+.lawyer-card {
+  background: #F5EFE0;
+  border: 1px solid #A88840;
+  border-radius: 10px;
+  padding: 26px 22px;
+  margin: 28px 0;
+  text-align: center;
+  max-width: 100%;
+}
+.lawyer-avatar {
+  display: block;
+  margin: 0 auto 16px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #6B4F0E;
+}
+.lawyer-avatar-img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.lawyer-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6B4F0E;
+  margin: 0 0 6px;
+  letter-spacing: 2px;
+}
+.lawyer-title {
+  font-size: 13px;
+  color: #6B5520;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  margin: 0 0 14px;
+}
+.lawyer-divider {
+  width: 40px;
+  height: 2px;
+  background: #A88840;
+  margin: 0 auto 14px;
+  border-radius: 1px;
+}
+.lawyer-bio {
+  font-size: 13px;
+  color: #4A4A4A;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-align: justify;
+  text-indent: 0;
+  margin: 0;
+}
+
+/* ========== 页脚品牌区（明显紧缩，13px） ========== */
+.footer-brand {
+  text-align: center;
+  margin: 32px 0 16px;
+  padding: 20px 0;
+}
+.footer-line {
+  width: 60px;
+  height: 1px;
+  background: #A88840;
+  margin: 0 auto 12px;
+}
+.footer-text {
+  font-size: 13px;
+  font-weight: bold;
+  color: #6B4F0E;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+.footer-sub {
+  font-size: 13px;
+  color: #6B5520;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* ========== 图片样式 ========== */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 16px auto;
+}
+
+/* ========== 正文 strong 加粗色 ========== */
+strong {
+  color: #6B4F0E;
+}
+
+/* ========== 公众号版尾卡片（明显紧缩，13px） ========== */
+.gzh-footer {
+  margin: 40px 0 20px;
+  padding: 0;
+  text-align: center;
+}
+.gzh-footer .footer-logo {
+  font-size: 13px;
+  font-weight: bold;
+  color: #6B4F0E;
+  letter-spacing: 4px;
+  margin-bottom: 12px;
+}
+.gzh-footer .footer-slogan {
+  font-size: 13px;
+  color: #3D2E08;
+  letter-spacing: 2px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+.gzh-footer .footer-qrcode-wrap {
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid #C9B58A;
+  border-radius: 6px;
+  padding: 12px;
+  margin: 0 auto;
+}
+.gzh-footer .footer-qrcode {
+  display: block;
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 4px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.gzh-footer .footer-qrcode-hint {
+  font-size: 13px;
+  color: #6B5520;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+.gzh-footer .footer-contact-box {
+  background: #2C2C2C;
+  border-radius: 8px;
+  padding: 22px 18px;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: left;
+}
+.gzh-footer .footer-contact-title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #A88840;
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.gzh-footer .footer-contact-line {
+  font-size: 13px;
+  color: #CCCCCC;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-indent: 0;
+  margin: 0;
+}
+
+/* ========== hr 分隔线 ========== */
+hr {
+  border: none;
+  border-top: 1px solid #C9B58A;
+  margin: 24px 0;
+}
+
+/* ========== 文章表头（深邃蓝渐变底 + 原色深蓝 logo） ========== */
+.article-header {
+  margin: 0 0 28px 0;
+  padding: 0;
+}
+
+/* 外框：深蓝细边框 + 内间距，画框感 */
+.header-frame {
+  border: 2px solid #1A3A6B;
+  padding: 2px;
+}
+
+/* 内层：深邃蓝色渐变（顶浅底深），专业稳重 */
+.header-inner {
+  background: linear-gradient(180deg, #F0F5FF 0%, #C8D8EE 25%, #6B8FBF 55%, #2C5286 80%, #1A3A6B 100%);
+  padding: 22px 18px 18px 18px;
+  text-align: center;
+}
+
+/* 顶部金色光带（专业点缀，与深蓝形成经典律所配色） */
+.header-lightbar {
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(201, 181, 138, 0.3) 25%, #C9B58A 50%, rgba(201, 181, 138, 0.3) 75%, transparent 100%);
+  margin: 0 auto 16px auto;
+}
+
+/* Logo 保持原色（深蓝），透明背景，在顶部浅蓝区清晰 */
+.header-logo-wrap {
+  display: inline-block;
+  margin: 0 auto 14px auto;
+  padding: 0;
+  background: transparent;
+}
+.header-logo-img {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* 律所中文名（白色，在深色背景上醒目） */
+.header-title {
+  font-size: 15px;
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 1.4;
+  margin: 0 0 4px 0;
+  text-align: center;
+}
+
+/* 英文名（浅白半透明） */
+.header-en {
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 3px;
+  margin: 0 0 12px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* 金色分隔短线（专业点缀） */
+.header-divider {
+  width: 40px;
+  height: 1px;
+  background: #C9B58A;
+  margin: 10px auto 10px auto;
+}
+
+/* 副标语（金色，专业感） */
+.header-slogan {
+  font-size: 12px;
+  color: #C9B58A;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 0;
+}
+
+/* ========== 图片 figure + figcaption（90% 宽居中，说明浅色居中） ========== */
+figure {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+figure img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+figcaption {
+  text-align: center;
+  color: #999999;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  line-height: 1.6;
+}

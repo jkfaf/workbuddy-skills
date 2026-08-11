@@ -1,0 +1,84 @@
+/* 文艺简约风格自定义 CSS */
+/* 使用方式: --custom-css assets/css/literary-style.css */
+
+#gzh-preview {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #595959;
+  letter-spacing: 0.5px;
+}
+
+#gzh-preview h1 {
+  font-size: 22px;
+  color: #8c6a4f;
+  text-align: center;
+  margin: 35px 0 25px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+#gzh-preview h2 {
+  font-size: 18px;
+  color: #8c6a4f;
+  margin: 30px 0 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e8e0d5;
+  font-weight: 500;
+}
+
+#gzh-preview h3 {
+  font-size: 16px;
+  color: #8c6a4f;
+  margin: 25px 0 10px;
+  font-weight: 500;
+}
+
+#gzh-preview p {
+  margin: 18px 0;
+  text-align: justify;
+}
+
+#gzh-preview blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+  background-color: #faf8f5;
+  border-left: 3px solid #c4a882;
+  color: #8c7853;
+  font-style: italic;
+}
+
+#gzh-preview code {
+  background-color: #f5f0e8;
+  color: #8c6a4f;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+#gzh-preview pre {
+  background-color: #faf8f5;
+  border: 1px solid #e8e0d5;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 13px;
+}
+
+#gzh-preview pre code {
+  background-color: transparent;
+  color: #595959;
+}
+
+#gzh-preview img {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(140, 106, 79, 0.1);
+}
+
+#gzh-preview a {
+  color: #8c6a4f;
+  border-bottom: 1px solid #c4a882;
+}
+
+#gzh-preview table th {
+  background-color: #8c6a4f;
+}
