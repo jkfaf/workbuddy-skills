@@ -12,6 +12,7 @@
 | tencent-cos-uploader | 16K | 无 |
 | ur-report-rigor | 8K | 无 |
 | ur-data-analysis | 8K | 无 |
+| game-ur-report | 8K | 无（建议与 ur-report-rigor 联用） |
 | wechat-article-pro | 8K | 无 |
 | wechat-publisher | 48K | 无 |
 
