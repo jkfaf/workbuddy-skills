@@ -16,6 +16,16 @@
 | wechat-article-pro | 8K | 无 |
 | wechat-publisher | 48K | 无 |
 
+## 在线地址（仓库已公开）
+
+单文件直接下载：`https://raw.githubusercontent.com/jkfaf/workbuddy-skills/main/<skill名>/SKILL.md`
+
+用户研究三件套（可被任何智能体直接拉取调用）：
+
+- game-ur-report: <https://github.com/jkfaf/workbuddy-skills/blob/main/game-ur-report/SKILL.md>
+- ur-report-rigor: <https://github.com/jkfaf/workbuddy-skills/blob/main/ur-report-rigor/SKILL.md>
+- ur-data-analysis: <https://github.com/jkfaf/workbuddy-skills/blob/main/ur-data-analysis/SKILL.md>
+
 ## 在另一台设备安装
 
 ```bash
