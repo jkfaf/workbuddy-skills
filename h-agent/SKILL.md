@@ -53,9 +53,12 @@ allowed-tools: Read, Write, Bash
 ## 执行
 
 ```bash
-cd /root/.codebuddy/skills/h-agent/h-agent && npm install docx --save 2>/dev/null
 python3 scripts/generate.py <输出目录> '<JSON>'
 ```
+
+（macOS 本机使用托管 Python：/Users/lihong/.workbuddy/binaries/python/envs/default/bin/python3，依赖 python-docx）
+
+版式为湖北诚明律所标准：标题二号宋体加粗居中，正文仿宋四号，行距 1.5，首行缩进两字符。律所固定信息内置于脚本（地址：武汉市黄孝河路竹叶山华中国际广场A座17楼，电话（027）82623083），李鸿电话 15927260627。
 
 JSON 格式：
 ```json
